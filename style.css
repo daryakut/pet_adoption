@@ -5,16 +5,62 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+body{
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* Равномерно распределить элементы по ширине */
+  align-items: center; /* Выравнивать элементы по вертикали по центру */
+  padding: 10px 20px;
+  color: #fff;
+  margin: 50px 0;
+}
+
 button {
   border: none;
+  /* float: right; */
+  margin-right: 50px;
+  padding: 16px 32px;
+  background-color: #ada7ff;
+  color: white;
+  border-radius: 25px;
+  font-family: "Dosis";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 150px;
 }
-a{
+a {
   text-decoration: none;
 }
 nav,
 ul,
 li {
-  display: inline-block;
-  border: 1px solid red;
   height: 50px;
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+}
+li {
+  margin: 0 25px;
+}
+li > a {
+  color: black;
+  font-family: "Dosis";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+a.active {
+  color: #ada7ff;
+}
+
+.logo {
+  margin-left: 150px;
+  float: left;
 }
